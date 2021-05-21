@@ -1,12 +1,6 @@
 # Hello World example
 
-This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/hello-world)
+This example shows the most basic manually the auth for redirect if the user hasn't authenticated. We have 1 page: `pages/index.js`, 1 component `components/Layout/Login.js` and 1 context `contexts/AuthProvider/AuthProvider.js`. we send from `pages/_app.js` the `Component` and `pageProps` to AuthProvider for handle the conditional rendering if user auth can see the `pages/index.js` and else will see the Login Component (this a simple "auth-redirect" for nextjs)
 
 ## How to use
 
